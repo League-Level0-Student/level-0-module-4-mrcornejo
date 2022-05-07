@@ -1,6 +1,7 @@
 package _01_double._1_change_calculator;
 
 import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
 
 /*
  * I have a pocket full of change. I hate doing math. Make me a program that
@@ -25,7 +26,7 @@ public class ChangeCalculator {
 		// ok?
 		
 		// Convert their answer to an int.   Hint: Integer.parseInt()  
-		Integer.parseInt(null);
+		//Integer.parseInt(null);
 		// Ask the user how many dimes they have, and convert their answer
 		String dimes = JOptionPane.showInputDialog("How many dimes do you have?");
 		int numDimes = Integer.parseInt(dimes);	// the name dimes and Dimes are not the same!
@@ -45,8 +46,20 @@ public class ChangeCalculator {
 		// it's not a method.  do arithmetic like in math class.
 		// 
 		// Tell the user how much money they have in dollars and cents format (e.g. $6.75)
-		String dollars = JOptionPane.showInputDialog("How much money do you have in total?");
-		int numDollars = Integer.parseInt(dollars);
+
+//		String money = JOptionPane.showInputDialog("How much money do you have in total?");
+//		int nummoney = Integer.parseInt(money);
+		double total = numNickels*0.05 + numDimes*0.10 + numQuarters*0.25;
+		System.out.println("Total amount is $" +  total);
+		// String.format(%.2f, total)
+		
+		// it's kinda working.  want to say this program is done?
+		// does it calculate correctly?  looks ok.
+		
+		// hmm i'm having trouble :(
+		// can i fix a few things?yes  ok.run it
+		// so $1.30 ... can i fix it a bit so the output
+		// looks like money?yes
 	}
 }
 
