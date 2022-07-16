@@ -29,6 +29,7 @@ public class RedSquare {
         }
 		if (!isRed && isSquare) {
 			drawBlueSquare();
+			
 		}
 		// 1. Run the program and notice no shape is drawn.
 		
