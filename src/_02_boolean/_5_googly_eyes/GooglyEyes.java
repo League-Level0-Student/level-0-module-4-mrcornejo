@@ -2,7 +2,7 @@ package _02_boolean._5_googly_eyes;
 
 import processing.core.PApplet;
 import processing.core.PImage;
-
+//how do i use an image folder?
 /*
  * Goal: Put googly eyes on a face!
  * 
@@ -12,7 +12,8 @@ import processing.core.PImage;
  * 
  * 2. Declare a variable for the image:
  *    PImage face;
- * 
+  		int face;
+ * 	
  * 3. In your setup() method, import your image using the following code:
  *    face = loadImage("face.jpg");
  * 
@@ -49,12 +50,18 @@ public class GooglyEyes extends PApplet {
     
     @Override
     public void setup() {
+    	face = loadImage("Gary.png");
+    	face.resize(WIDTH, HEIGHT);
 
     }
 
     @Override
     public void draw() {
-
+    	
+    	
+    	
+    	
+    	
     }
 
     static public void main(String[] args) {
