@@ -54,7 +54,7 @@ public class WheresWaldo extends PApplet {
 
     @Override
     public void setup() {
-    	draw(>waldo.jpq);  
+    	draw("waldo.jpq");  
     }
 
     @Override

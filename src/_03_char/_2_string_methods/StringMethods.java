@@ -8,8 +8,8 @@ public class StringMethods {
 			String str = "ABC";
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
-			ABC = str.charAt(3);
-					System.out.println(C);
+			char ABC = str.charAt(3);
+					System.out.println(ABC);
 		
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
