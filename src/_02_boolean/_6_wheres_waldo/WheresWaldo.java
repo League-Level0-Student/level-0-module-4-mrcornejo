@@ -9,7 +9,7 @@ import javax.sound.sampled.Clip;
 import processing.core.PApplet;
 import processing.core.PImage;
 
-/*
+/*ok
  * Goal: Create a Where's Waldo game!
  * 
  * 1. Find a Where's Waldo image and copy it into the /images folder at the
@@ -23,7 +23,9 @@ import processing.core.PImage;
  *      waldo = loadImage("waldo.jpg");
  * 
  *   4. Resize your image to the size of the window using the resize() method.
- * 
+ * WIDTH = 600;
+  HEIGHT = 400;
+  	
  *   5. Set your Waldo image as the window's background.
  * 
  * In the draw() method:
@@ -37,12 +39,14 @@ import processing.core.PImage;
  *      X and Y coordinates. If the coordinates are on Waldo call the
  *      playWhoohoo() method, otherwise call the playDoh() method.
  */
+
+
 public class WheresWaldo extends PApplet {
     static final int WIDTH = 600;
     static final int HEIGHT = 400;
 
     PImage waldo;
-
+    waldo = loadImage("waldo.jpg"); 
     @Override
     public void settings() {
         size(WIDTH, HEIGHT);
@@ -50,7 +54,7 @@ public class WheresWaldo extends PApplet {
 
     @Override
     public void setup() {
-        
+    	draw(>waldo.jpq);  
     }
 
     @Override
