@@ -14,11 +14,16 @@ public class StringMethods {
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
 			int count = str.length();
-					System.out.println("There are" +count+ "characters in the string!");
-		
+					//System.out.println("There are" +count+ "characters in the string!");
+					System.out.println(ABC + str.length());
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
-
+					for(int i=0; i<str.length(); i++) {
+						System.out.println(i);
+						char A = str.charAt(1);
+						/*char B = str.charAt(2);
+						char C = str.charAt(3);*/
+					}
 		
 		// 5. Pick a char inside your String, and use a loop to determine
 		//    what position/index in the String the char is located.
