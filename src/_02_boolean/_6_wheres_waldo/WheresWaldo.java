@@ -9,7 +9,7 @@ import javax.sound.sampled.Clip;
 import processing.core.PApplet;
 import processing.core.PImage;
 
-/*ok
+/*
  * Goal: Create a Where's Waldo game!
  * 
  * 1. Find a Where's Waldo image and copy it into the /images folder at the
@@ -46,7 +46,7 @@ public class WheresWaldo extends PApplet {
     static final int HEIGHT = 400;
 
     PImage waldo;
-    waldo = loadImage("waldo.jpg"); 
+    
     @Override
     public void settings() {
         size(WIDTH, HEIGHT);
@@ -54,12 +54,21 @@ public class WheresWaldo extends PApplet {
 
     @Override
     public void setup() {
-    	draw("waldo.jpq");  
+    	waldo = loadImage("waldo.jpg"); 
+    	waldo.resize(WIDTH, HEIGHT);
+    	draw();  
     }
 
     @Override
     public void draw() {
-        
+    	background(waldo);
+    	println("X: " + mouseX + " Y: " + mouseY);
+//    	if () {//i need help in line 66 please 
+//    	playWhoohoo();
+//    	}
+//    	else { 
+//    		playDoh();
+//    	}
     }
 
     static public void main(String[] args) {
