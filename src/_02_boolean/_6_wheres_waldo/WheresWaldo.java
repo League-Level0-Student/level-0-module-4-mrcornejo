@@ -9,35 +9,37 @@ import javax.sound.sampled.Clip;
 import processing.core.PApplet;
 import processing.core.PImage;
 
-/*
- * Goal: Create a Where's Waldo game!
- * 
- * 1. Find a Where's Waldo image and copy it into the /images folder at the
- *    top level of this module OR use the provided waldo.jpg image.
- * 
- * 2. Declare a variable for the image:
- *    PImage face;
- * 
- * In the setup() method:
- *   3. Load your image using the following code:
- *      waldo = loadImage("waldo.jpg");
- * 
- *   4. Resize your image to the size of the window using the resize() method.
- * WIDTH = 600;
-  HEIGHT = 400;
-  	
- *   5. Set your Waldo image as the window's background.
- * 
- * In the draw() method:
- *   6. Find the range of X and Y coordinates of Waldo in the image. You can
- *      use the following code to help you:
- *      println("X: " + mouseX + " Y: " + mouseY);
- * 
- *   7. Use an if statement to check if the user clicked the mouse
- * 
- *   8. If the user clicked the mouse, use another if statement to check the
- *      X and Y coordinates. If the coordinates are on Waldo call the
- *      playWhoohoo() method, otherwise call the playDoh() method.
+
+/*  Goal: Create a Where's Waldo game!
+  
+  1. Find a Where's Waldo image and copy it into the /images folder at the
+     top level of this module OR use the provided waldo.jpg image.
+  
+  2. Declare a variable for the image:
+     PImage waldo;
+  		Int waldo;
+  		
+  In the setup() method:
+    3. Load your image using the following code:
+       waldo = loadImage("waldo.jpg");
+  		
+    4. Resize your image to the size of the window using the resize() method.
+ // WIDTH = 600;
+ // HEIGHT = 400;
+    	face.resize(WIDTH, HEIGHT);
+    	  	
+    5. Set your Waldo image as the window's background.
+  
+  In the draw() method:
+    6. Find the range of X and Y coordinates of Waldo in the image. You can
+       use the following code to help you:
+       println("X: " + mouseX + " Y: " + mouseY);
+  
+    7. Use an if statement to check if the user clicked the mouse
+  
+    8. If the user clicked the mouse, use another if statement to check the
+       X and Y coordinates. If the coordinates are on Waldo call the
+       playWhoohoo() method, otherwise call the playDoh() method.
  */
 
 
