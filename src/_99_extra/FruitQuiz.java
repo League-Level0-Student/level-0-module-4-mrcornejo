@@ -25,7 +25,7 @@ public class FruitQuiz extends KeyAdapter {
 		int KeyA = KeyEvent.VK_A;
 		int KeyB = KeyEvent.VK_B;
 		int KeyC = KeyEvent.VK_C;
-		
+		int c = 0;
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
 		
 		// 12. If question2 is showing,
