@@ -30,8 +30,8 @@ public class FruitQuiz extends KeyAdapter {
 			if (keyCode == KeyA) {
 				correct();
 			}
-			else { 
-				(/*B&&C*/);
+		/*	else { 
+				();
 				incorrect();
 			}
 		}
@@ -41,7 +41,7 @@ public class FruitQuiz extends KeyAdapter {
 				correct();
 			}
 			else { 
-				(/*A&&C*/);
+				();
 				incorrect();
 			}
 		}
@@ -53,7 +53,7 @@ public class FruitQuiz extends KeyAdapter {
 			correct();
 		}
 		else { 
-			(/*A&&C*/);
+			();
 			incorrect();
 		}
 			
@@ -78,10 +78,10 @@ public class FruitQuiz extends KeyAdapter {
 				(KeyCode == KeyB);
 			}
 				// 9. Call the incorrect() method
-					incorrect()
+					incorrect() */
 		}
 
-	}
+	} 
 
 	private void correct() {
 		// 5. Find a sound for when they get a question right, and drag it into
