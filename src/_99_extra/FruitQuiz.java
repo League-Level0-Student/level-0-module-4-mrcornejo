@@ -12,8 +12,6 @@ public class FruitQuiz extends KeyAdapter {
 
 	void makeQuestions() {
 		question1 = new JLabel("<html>Which is not a real fruit? <br> A: Dragon Fruit <br> B: Durian <br> C: Crazyberry</html>");
-		// 11. Make another question called "question2".  Use question1 above as a guide.
-		//question2 = new JLabel("<html>Which is not a real fruit? <br> A: Strawberry <br> B: Watermelon <br> C:")
 	}
 
 	@Override
@@ -27,11 +25,37 @@ public class FruitQuiz extends KeyAdapter {
 		int KeyC = KeyEvent.VK_C;
 		int c = 0;
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
-		
+		void newQuestions() {
+			question4 = new JLabel("<html>Which is not a real fruit? <br> A: Lettuce <br> B: Apple <br> C: Tomatoes </html>");
+			if (keyCode == KeyA) {
+				correct();
+			}
+			else { 
+				(/*B&&C*/);
+				incorrect();
+			}
+		}
+		void newQuestions() {
+			question3 = new JLabel("<html>Which is not a real fruit? <br> A: Bananna <br> B: Spinach <br> C: Grapes </html>");
+			if (keyCode == KeyB) {
+				correct();
+			}
+			else { 
+				(/*A&&C*/);
+				incorrect();
+			}
+		}
+
 		// 12. If question2 is showing,
 			
 			// 13. check if it is right or wrong like you did for question1
-		
+		if (keyCode == KeyB) {
+			correct();
+		}
+		else { 
+			(/*A&&C*/);
+			incorrect();
+		}
 			
 		if (question1.isShowing()) {
 			// 3. If they selected the right fruit, do steps 4 and 7
@@ -39,14 +63,22 @@ public class FruitQuiz extends KeyAdapter {
 				
 			
 				// 4. Call the correct() method
-
+				correct();
+				
+				
 				// 7. Use the nextQuestion() method to go to question2
-			
+				void nextQuestions() {
+					// 11. Make another question called "question2".  Use question1 above as a guide.
+					question2 = new JLabel("<html>Which is not a real fruit? <br> A: Strawberry <br> B: Bear <br> C: Watermelon");
+				}
 			}
 			// 8. else (if they touched something else)
-				
+			else {
+				(KeyCode == KeyA);
+				(KeyCode == KeyB);
+			}
 				// 9. Call the incorrect() method
-		
+					incorrect()
 		}
 
 	}
