@@ -24,6 +24,7 @@ public class FruitQuiz extends KeyAdapter {
 		int KeyB = KeyEvent.VK_B;
 		int KeyC = KeyEvent.VK_C;
 		int c = 0;
+		int q = 0;
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
 		void newQuestions() {
 			question4 = new JLabel("<html>Which is not a real fruit? <br> A: Lettuce <br> B: Apple <br> C: Tomatoes </html>");
